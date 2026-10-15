@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "template_only": true,
+  "instructions_he": "העתק רק למרחב פרטי מאושר. השתמש בכינויים. null פירושו לא ידוע, לא תשובה שלילית. אין לשמור סיסמאות, פרטי אשראי או מספרי SSN. הוסף ילד נפרד לכל תיק. ראיית השלמה היא תנאי לסימון הושלם.",
+  "status_values": [
+    "unknown",
+    "missing",
+    "not_started",
+    "draft",
+    "needs_review",
+    "ready_for_human_action",
+    "waiting_external",
+    "completed",
+    "not_applicable",
+    "deferred_by_user"
+  ],
+  "household_alias": null,
+  "authorized_workspace_ref": null,
+  "authorized_viewer_roles": [],
+  "last_updated_at": null,
+  "family_route": {
+    "reported_established": null,
+    "source_ref": null,
+    "checked_at": null,
+    "case_specific_open_issue": null
+  },
+  "shared_ancestor_pack": {
+    "owner_role": null,
+    "access_status": "unknown",
+    "private_reference": null,
+    "authorized_use_scope": null,
+    "inventory_status": "unknown"
+  },
+  "household_documents": [],
+  "travel_preferences": {
+    "region": null,
+    "flexibility": null,
+    "window": null,
+    "us_mailing_address_ready": null,
+    "address_owner_consent_confirmed": null
+  },
+  "children": [
+    {
+      "child_alias": null,
+      "age_or_critical_date": null,
+      "current_stage": "unknown",
+      "facts": [
+        {
+          "field": null,
+          "value": null,
+          "source_ref": null,
+          "verification": "user_reported",
+          "checked_at": null
+        }
+      ],
+      "documents": [],
+      "entry": {
+        "passport_checked": null,
+        "authorization_type": null,
+        "authorization_status": "unknown",
+        "linked_passport_checked": null,
+        "valid_for_planned_trip": null,
+        "evidence_ref": null
+      },
+      "n600k": {
+        "filing_status": "unknown",
+        "form_edition_checked_at": null,
+        "office_preference": null,
+        "preferred_interview_window": null,
+        "office_selection_reviewed_by_human": null,
+        "submission_evidence_ref": null,
+        "last_official_notice_ref": null,
+        "last_official_notice_at": null,
+        "interview_confirmed_at": null,
+        "interview_location": null
+      },
+      "milestones": {
+        "documents_ready": {
+          "status": "unknown",
+          "evidence_ref": null,
+          "verified_at": null,
+          "owner_role": null,
+          "next_action": null,
+          "depends_on": [],
+          "completion_evidence_required": null
+        },
+        "translation_reviewed": {
+          "status": "unknown",
+          "evidence_ref": null,
+          "verified_at": null,
+          "owner_role": null,
+          "next_action": null,
+          "depends_on": [],
+          "completion_evidence_required": null
+        },
+        "application_draft_reviewed": {
+          "status": "unknown",
+          "evidence_ref": null,
+          "verified_at": null,
+          "owner_role": null,
+          "next_action": null,
+          "depends_on": [],
+          "completion_evidence_required": null
+        },
+        "application_submitted": {
+          "status": "unknown",
+          "evidence_ref": null,
+          "verified_at": null,
+          "owner_role": null,
+          "next_action": null,
+          "depends_on": [],
+          "completion_evidence_required": null
+        },
+        "interview_notice_received": {
+          "status": "unknown",
+          "evidence_ref": null,
+          "verified_at": null,
+          "owner_role": null,
+          "next_action": null,
+          "depends_on": [],
+          "completion_evidence_required": null
+        },
+        "travel_prepared": {
+          "status": "unknown",
+          "evidence_ref": null,
+          "verified_at": null,
+          "owner_role": null,
+          "next_action": null,
+          "depends_on": [],
+          "completion_evidence_required": null
+        },
+        "citizenship_completed": {
+          "status": "unknown",
+          "evidence_ref": null,
+          "verified_at": null,
+          "owner_role": null,
+          "next_action": null,
+          "depends_on": [],
+          "completion_evidence_required": null
+        },
+        "citizenship_certificate_received": {
+          "status": "unknown",
+          "evidence_ref": null,
+          "verified_at": null,
+          "owner_role": null,
+          "next_action": null,
+          "depends_on": [],
+          "completion_evidence_required": null
+        },
+        "passport_submitted": {
+          "status": "unknown",
+          "evidence_ref": null,
+          "verified_at": null,
+          "owner_role": null,
+          "next_action": null,
+          "depends_on": [],
+          "completion_evidence_required": null
+        },
+        "passport_received": {
+          "status": "unknown",
+          "evidence_ref": null,
+          "verified_at": null,
+          "owner_role": null,
+          "next_action": null,
+          "depends_on": [],
+          "completion_evidence_required": null
+        },
+        "ssn_submitted": {
+          "status": "unknown",
+          "evidence_ref": null,
+          "verified_at": null,
+          "owner_role": null,
+          "next_action": null,
+          "depends_on": [],
+          "completion_evidence_required": null
+        },
+        "ssn_card_received": {
+          "status": "unknown",
+          "evidence_ref": null,
+          "verified_at": null,
+          "owner_role": null,
+          "next_action": null,
+          "depends_on": [],
+          "completion_evidence_required": null
+        },
+        "original_documents_returned": {
+          "status": "unknown",
+          "evidence_ref": null,
+          "verified_at": null,
+          "owner_role": null,
+          "next_action": null,
+          "depends_on": [],
+          "completion_evidence_required": null
+        }
+      },
+      "next_actions": [
+        {
+          "action": null,
+          "owner_role": null,
+          "status": "unknown",
+          "depends_on": [],
+          "due_at": null,
+          "deadline_source_ref": null,
+          "requires_human_action": null,
+          "completion_evidence_required": null
+        }
+      ],
+      "open_questions": [],
+      "source_checks": [
+        {
+          "topic": null,
+          "url": null,
+          "checked_at": null,
+          "finding": null,
+          "verification_status": "not_verified",
+          "limitation": null
+        }
+      ]
+    }
+  ],
+  "follow_up": {
+    "requested_by_user": false,
+    "source_access_verified": false,
+    "schedule_created_and_confirmed": false,
+    "next_check_at": null,
+    "purpose": null,
+    "stopping_condition": null
+  },
+  "change_log": []
+}

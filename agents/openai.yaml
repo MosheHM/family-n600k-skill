@@ -1,0 +1,14 @@
+interface:
+  display_name: אזרחות אמריקאית לילדים במשפחה
+  short_description: ליווי משפחתי מעשי מ־N-600K עד דרכון ו־SSN
+  default_prompt: השתמש בסקיל $manage-family-n600k כדי למפות את השלב של כל ילד ולתת
+    לנו צעדים מעשיים להמשך.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
