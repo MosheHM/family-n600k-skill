@@ -30,9 +30,10 @@ assert prompt == render(), 'Generated prompt is stale'
 assert not re.search(r'\]\((?:references|assets)/', prompt), 'Prompt depends on local file'
 for snippet in ['שינוי לשכה לאחר מכן עלול להיות מורכב', 'להגיש במהלך הביקור בארה״ב', 'כתובת אמריקאית אמינה', 'אין להוסיף נוטריון או אפוסטיל', 'תור, אישור מקדים או חלוף זמן אינם אזרחות']:
     assert snippet in prompt, f'Missing workflow guardrail: {snippet}'
+SKIP_DIRS = {'.git', '__pycache__', 'private', 'cases', 'uploads'}
 for path in root.rglob('*'):
-    if path.is_file() and '__pycache__' not in str(path):
-        text = path.read_text(encoding='utf-8')
+    if path.is_file() and not SKIP_DIRS & set(path.relative_to(root).parts):
+        text = path.read_text(encoding='utf-8', errors='replace')
         assert not re.search(r'skill-[0-9a-f]{32}', text), f'Private skill ID: {path}'
         assert ('chatgpt.com/' + 'skills?') not in text, f'Private skill URL: {path}'
         assert not re.search(r'https://(?:docs\.google\.com|drive\.google\.com|notion\.so)/', text), f'Private document link: {path}'
